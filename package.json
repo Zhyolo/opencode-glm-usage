@@ -1,0 +1,40 @@
+{
+  "name": "opencode-glm-usage",
+  "version": "0.1.0",
+  "description": "OpenCode TUI plugin that shows Zhipu (智谱/GLM/Z.ai/BigModel) quota usage — 5h token limit, monthly MCP limit, 24h token total, per-model and per-tool breakdown — in the sidebar.",
+  "type": "module",
+  "exports": {
+    "./tui": "./index.tsx"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-tui-plugin",
+    "zhipu",
+    "zhipuai",
+    "glm",
+    "z.ai",
+    "bigmodel",
+    "usage",
+    "quota",
+    "sidebar"
+  ],
+  "license": "MIT",
+  "author": "Zhyolo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zhyolo/opencode-glm-usage.git"
+  },
+  "homepage": "https://github.com/Zhyolo/opencode-glm-usage",
+  "bugs": {
+    "url": "https://github.com/Zhyolo/opencode-glm-usage/issues"
+  },
+  "files": [
+    "index.tsx",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.17.0"
+  }
+}
