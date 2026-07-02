@@ -151,10 +151,10 @@ function BarRow(props: { label: string; limit?: LimitInfo; theme: () => any; col
           <span style={{ fg: props.theme()?.textMuted }}>{"░".repeat(width - filled())}</span>
         </text>
         <text fg={props.colorFor(lim()?.remaining)}>{lim()?.remaining != null ? `${lim()?.remaining}%` : "?"}</text>
+        <Show when={lim()?.resetLabel}>
+          <text fg={props.theme()?.textMuted}>{`↻ ${lim()?.resetLabel}`}</text>
+        </Show>
       </box>
-      <Show when={lim()?.resetLabel}>
-        <text fg={props.theme()?.textMuted}>{`  ↻ ${lim()?.resetLabel}`}</text>
-      </Show>
     </box>
   )
 }
