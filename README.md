@@ -46,7 +46,7 @@ MCP 月度  ██████░░░░ 78%
 
 ## 要求
 
-- [opencode](https://opencode.ai)（基于 Bun，运行时自动转译 TSX，无需构建步骤）
+- [opencode](https://opencode.ai) **≥ 1.17.0**（基于 Bun，运行时自动转译 TSX，无需构建步骤）
 - 已配置一个智谱 provider（通过 `opencode auth` 或在配置里声明），使其 baseURL 指向：
   - `https://open.bigmodel.cn/api/anthropic`（智谱开放平台），或
   - `https://api.z.ai/api/anthropic`（Z.ai）
