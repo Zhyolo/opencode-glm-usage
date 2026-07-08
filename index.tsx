@@ -1,3 +1,4 @@
+/** @jsxImportSource @opentui/solid */
 import { For, Show, createSignal, type JSX } from "solid-js"
 import type { TuiPlugin } from "@opencode-ai/plugin/tui"
 
