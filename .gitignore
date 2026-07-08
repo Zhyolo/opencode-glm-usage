@@ -4,4 +4,3 @@ node_modules/
 Thumbs.db
 *.tsbuildinfo
 .opencode/
-.glstatus-cache/

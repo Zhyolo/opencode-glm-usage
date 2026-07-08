@@ -38,7 +38,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "peerDependencies": {
-    "@opencode-ai/plugin": ">=1.17.0"
+  "engines": {
+    "opencode": ">=1.17.0"
   }
 }

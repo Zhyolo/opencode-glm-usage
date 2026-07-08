@@ -378,14 +378,18 @@ const tui: TuiPlugin = async (api) => {
     /* ignore */
   }
 
-  api.slots.register({
-    order: 50,
-    slots: {
-      sidebar_content() {
-        return <GlmSidebar api={api} usage={usage} />
+  try {
+    api?.slots?.register?.({
+      order: 50,
+      slots: {
+        sidebar_content() {
+          return <GlmSidebar api={api} usage={usage} />
+        },
       },
-    },
-  })
+    })
+  } catch (e: any) {
+    log("error", "slots.register 注册失败", { error: e?.message ?? String(e) })
+  }
 }
 
 export default { id: "glm-usage", tui }
